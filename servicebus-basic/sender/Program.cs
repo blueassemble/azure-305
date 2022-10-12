@@ -10,9 +10,9 @@ namespace Application
         // name of your Service Bus topic
         static string queueName = "az204-queue";
         // the client that owns the connection and can be used to create senders and receivers
-        static ServiceBusClient client;
+        static ServiceBusClient? client;
         // the sender used to publish messages to the queue
-        static ServiceBusSender sender;
+        static ServiceBusSender? sender;
         // number of messages to be sent to the queue
         private const int numOfMessages = 3;
 
